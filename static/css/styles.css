@@ -1,0 +1,95 @@
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* 메인 컨테이너 */
+  #app {
+    width: 90%; /* 더 넓게 */
+    max-width: 1200px; /* 최대 너비 증가 */
+    padding: 40px; /* 패딩 증가 */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 업로드 및 채팅 컨테이너 */
+  #upload-chat-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* 간격 증가 */
+  }
+  
+  /* 업로드 섹션 */
+  #upload-section {
+    width: 35%; /* 업로드 섹션의 비율 줄임 */
+  }
+  
+  #image-upload {
+    margin-top: 10px;
+  }
+  
+  #image-preview {
+    margin-top: 20px;
+    max-height: 300px; /* 높이 증가 */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #image-preview img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* 채팅 섹션 */
+  #chat-container {
+    width: 65%; /* 채팅 섹션 비율 증가 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #chat-box {
+    height: 600px; /* 채팅 박스 크기 2배로 증가 */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px; /* 패딩 증가 */
+    background: #f9f9f9;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* 글자 크기 약간 증가 */
+  }
+  
+  #user-input {
+    padding: 15px; /* 입력창 크기 증가 */
+    font-size: 1rem; /* 글자 크기 증가 */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* 버튼 스타일 */
+  button {
+    padding: 15px; /* 버튼 크기 증가 */
+    background: #ffd1dc; /* 파스텔 핑크 */
+    color: #000000; /* 검은색 글씨 */
+    font-weight: bold; /* 굵은 글씨 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* 글자 크기 증가 */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ffb6c1; /* 약간 더 진한 파스텔 핑크 */
+  }
+  

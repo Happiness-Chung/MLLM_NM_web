@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLaVA-NM</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <div id="app">
+    <h1>LLaVA-NM</h1>
+    
+    <!-- 업로드 및 채팅 섹션 -->
+    <div id="upload-chat-container">
+      <!-- 업로드 섹션 -->
+      <div id="upload-section">
+        <h2>Upload an Image</h2>
+        <input type="file" id="image-upload" accept="image/*">
+        <button id="upload-button">Upload</button>
+        <div id="image-preview"></div>
+      </div>
+      
+      <!-- 채팅 섹션 -->
+      <div id="chat-container">
+        <h2>Chat</h2>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
